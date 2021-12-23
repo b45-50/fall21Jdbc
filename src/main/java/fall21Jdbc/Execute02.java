@@ -42,10 +42,12 @@ public class Execute02 {
 		while(result3.next()) {
 			System.out.println(result3.getInt(1) + " - " + result3.getString(2) + " - " + result3.getInt(3));
 		}
-
+		
 		con.close();
 		st.close();
 		result1.close();
+		result2.close();
+		result3.close();
 	}
 
 }
